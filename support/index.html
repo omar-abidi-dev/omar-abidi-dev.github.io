@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kawaii Coloring Book Support</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Help and contact for Kawaii Coloring Book: Cute Art on the App Store.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700&display=swap">
+<style>
+  /* Layout: one calm reading column, a soft "paper" header band, questions as plain sections */
+  :root {
+    --bg: #fff8f3;
+    --paper: #ffffff;
+    --ink: #3a1f5d;
+    --muted: #6f5a86;
+    --line: #f0e2ea;
+    --accent: #e8508a;
+    --accent-soft: #ffe3ee;
+    --display: "Fredoka", "Nunito", ui-rounded, system-ui, sans-serif;
+    --body: "Nunito", ui-rounded, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1c1424; --paper: #261c31; --ink: #f6eefc; --muted: #c4b3d6;
+      --line: #3a2d48; --accent: #ff7fae; --accent-soft: #3d2236; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1c1424; --paper: #261c31; --ink: #f6eefc; --muted: #c4b3d6;
+    --line: #3a2d48; --accent: #ff7fae; --accent-soft: #3d2236; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink); font-family: var(--body);
+    font-size: 17px; line-height: 1.6; margin: 0;
+  }
+  .wrap {
+    max-width: 680px; margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  header { padding-block: 56px 32px; }
+  .app { display: flex; gap: 18px; align-items: center; }
+  .icon {
+    width: 72px; height: 72px; border-radius: 17px; flex: none;
+    background: conic-gradient(from 200deg, #ffd6a5, #ffadc8, #c8b6ff, #a0e7e5, #ffd6a5);
+    display: grid; place-items: center; font-family: var(--display); font-weight: 700;
+    font-size: 30px; color: #3a1f5d;
+  }
+  h1 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 6vw, 38px); line-height: 1.15; margin: 0; text-wrap: balance; }
+  .tag { color: var(--muted); margin: 4px 0 0; }
+  .contact {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 18px;
+    padding: 22px 24px; display: grid; gap: 10px; margin-top: 28px;
+  }
+  .contact h2 { margin: 0; font-family: var(--display); font-weight: 600; font-size: 20px; }
+  .contact p { margin: 0; color: var(--muted); }
+  .email-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .email {
+    font-weight: 700; font-size: 18px; color: var(--accent); user-select: all;
+    word-break: break-all; text-decoration: none;
+  }
+  button {
+    font: inherit; font-weight: 700; font-size: 14px; border: 0; cursor: pointer;
+    background: var(--accent-soft); color: var(--ink); padding: 7px 14px; border-radius: 999px;
+  }
+  button:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  main { padding-block: 8px 48px; }
+  main h2 { font-family: var(--display); font-weight: 600; font-size: 22px; margin: 36px 0 4px; }
+  section { border-top: 1px solid var(--line); padding-block: 18px; }
+  section h3 { font-size: 17px; margin: 0 0 4px; font-weight: 700; }
+  section p { margin: 0; color: var(--muted); max-width: 62ch; }
+  footer { color: var(--muted); font-size: 14px; padding-block: 24px 48px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="app">
+    <div class="icon" aria-hidden="true">ʕ•ᴥ•ʔ</div>
+    <div>
+      <h1>Kawaii Coloring Book: Cute Art</h1>
+      <p class="tag">Support and frequently asked questions</p>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h2>Need help? Email us</h2>
+    <p>We read every message and usually reply within 2 business days. Please include your device model and iOS version if something isn't working.</p>
+    <div class="email-row">
+      <a class="email" id="email" href="mailto:contact.omarabidi@gmail.com?subject=Kawaii%20Coloring%20Book%20Support">contact.omarabidi@gmail.com</a>
+      <button type="button" id="copy">Copy address</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2>Common questions</h2>
+
+  <section>
+    <h3>How do I color a page?</h3>
+    <p>Open a page from the Home tab, pick a color at the bottom and drag your finger over the drawing. Your paint stays inside the lines automatically. Use the slider to change the brush size and pinch with two fingers to zoom in on small details.</p>
+  </section>
+
+  <section>
+    <h3>I made a mistake. Can I fix it?</h3>
+    <p>Yes. Tap Undo to step back, use the Eraser to remove color from one area, or tap the reset arrow at the top right to clear the whole page.</p>
+  </section>
+
+  <section>
+    <h3>Where are my finished pictures?</h3>
+    <p>Tap Save while coloring and your picture appears in the Gallery tab. From there you can keep coloring it later or share it with friends and family using the Share button.</p>
+  </section>
+
+  <section>
+    <h3>Do I need an account?</h3>
+    <p>No. Coloring, saving and sharing all work without an account. Signing in with Apple or Google is optional and is only used to publish your art to the community Feed and like other artworks.</p>
+  </section>
+
+  <section>
+    <h3>How do I report or block something in the Feed?</h3>
+    <p>Tap the "…" button on any artwork in the Feed tab and choose Report or Block. Reported artworks are hidden right away and reviewed by our team.</p>
+  </section>
+
+  <section>
+    <h3>Why do I see ads?</h3>
+    <p>The app is free to download and is supported by ads. You can choose whether ads are personalized when the app asks for tracking permission, and change it later in iPhone Settings › Privacy &amp; Security › Tracking.</p>
+  </section>
+
+  <section>
+    <h3>How do I delete my data?</h3>
+    <p>To remove your saved pictures, go to Settings › Delete All Artworks in the app. To delete your account and anything you published to the Feed, email us from the address above and we will remove it.</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>Kawaii Coloring Book: Cute Art · © 2026 Simo &amp; Omar</p>
+</footer>
+
+<script>
+  document.getElementById('copy').addEventListener('click', function () {
+    var btn = this;
+    var addr = 'contact.omarabidi@gmail.com';
+    function done(msg) { btn.textContent = msg; setTimeout(function () { btn.textContent = 'Copy address'; }, 1800); }
+    function fallback() {
+      var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); done('Selected');
+    }
+    try {
+      navigator.clipboard.writeText(addr).then(function () { done('Copied'); }, fallback);
+    } catch (e) { fallback(); }
+  });
+</script>
+
+</body>
+</html>
